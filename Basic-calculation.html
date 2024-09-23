@@ -1,0 +1,49 @@
+<script>
+    function calc(x,y,process){
+
+        if (process=='+') {
+            respond = x + y;
+            return respond;
+        } else if (process == '-') {
+            respond = x - y;
+            return respond;
+        }  else if (process == '*') {
+            respond = x * y;
+            return respond;
+        } else if (process == '/') {
+            respond = x / y;
+            return respond;
+        }
+
+    }
+
+    let number1 = parseFloat(prompt("Enter Firts Number.")); 
+    let number2 = parseFloat(prompt("Enter Second Number."));
+    let method = prompt("Select Method :- '+', '-', '*', '/'.");
+    let answer = calc(number1, number2, method);
+
+    console.log("x =", number1);
+    console.log("y =", number2);
+    
+    if(method =='+') {
+        console.log("Sum = x + y");
+        console.log("Sum =", number1, "+", number2);
+        console.log("Sum =", answer);
+
+    } else if (method == '-') {
+        console.log("Sub = x + y");
+        console.log("Sub =", number1, "-", number2);
+        console.log("Sub =", answer);
+
+    } else if (method == '*') {
+        console.log("Multi = x * y");
+        console.log("Multi =", number1, "*", number2);
+        console.log("Multi =", answer);
+
+    } else if (method == '/') {
+        console.log("Div = x / y");
+        console.log("Div =", number1, "/", number2);
+        console.log("Div =", answer);
+    }
+
+</script>
