@@ -16,10 +16,11 @@
         }
 
     }
+    let method = prompt("Select Method :- '+', '-', '*', '/'.");
 
+  if(method == '+' || method == '-'|| method == '*' || method == '/'){
     let number1 = parseFloat(prompt("Enter Firts Number.")); 
     let number2 = parseFloat(prompt("Enter Second Number."));
-    let method = prompt("Select Method :- '+', '-', '*', '/'.");
     let answer = calc(number1, number2, method);
 
     console.log("x =", number1);
@@ -45,5 +46,7 @@
         console.log("Div =", number1, "/", number2);
         console.log("Div =", answer);
     }
-
+  } else{
+    console.log("This Menthod is a Not Valid");
+  }
 </script>
